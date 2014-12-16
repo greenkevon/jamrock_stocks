@@ -10,6 +10,5 @@ module JamrockStocks
     TIME_HTML_PATH = 'span#TickerSpan > table > tr > td > table > tr > td[2] > span#LabelSummaryTime'
 
     TRADES_HTML_PATH = 'span#TickerTradeDataSpan > table > tr > td'
-    # NEWS_URL = 'https://www.mayberryinv.com//PhysicalPages/Ticker/NewsDataSource.aspx'
   end
 end
