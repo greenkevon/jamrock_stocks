@@ -28,16 +28,6 @@ module JamrockStocks
       end
       { stocks: stocks.freeze, date: date.freeze, time: time.freeze }
     end
-
-    def fetch_trades
-      trades_page = Nokogiri::HTML(open(StockConfig::TRADES_URL))
-      @trades = trades_page.css(StockConfig::TRADES_HTML_PATH)
-      #
-      # binding.pry
-      #
-      # @date, @time = market_summary_time.text.gsub(REGEXP_NON_BREAKING_SPACE, ' ').split
-      # self
-    end
   end
 end
 
