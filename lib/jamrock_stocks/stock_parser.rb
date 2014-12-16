@@ -29,9 +29,9 @@ module JamrockStocks
       { stocks: stocks.freeze, date: date.freeze, time: time.freeze }
     end
 
-    def parse_trades
-      # trades_page = Nokogiri::HTML(open(StockConfig::TRADES_URL))
-      # @trades = trades_page.css(StockConfig::TRADES_HTML_PATH)
+    def fetch_trades
+      trades_page = Nokogiri::HTML(open(StockConfig::TRADES_URL))
+      @trades = trades_page.css(StockConfig::TRADES_HTML_PATH)
       #
       # binding.pry
       #

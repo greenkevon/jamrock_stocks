@@ -16,7 +16,8 @@ module JamrockStocks
         StockParser.new.fetch_stocks
       end
 
-      def self.load_trades
+      def self.fetch_trades
+        StockParser.new.fetch_trades
         # trades = []
         # parsed_stocks = StockParser.new.parse_trades
         # binding.pry
