@@ -9,8 +9,8 @@ require 'open-uri'
 module JamrockStocks
   class StockClient
 
-      def self.fetch_stocks
-        StockParser.new.fetch_stocks
+      def self.fetch_stocks(symbol: '')
+        StockParser.new.fetch_stocks symbol: symbol
       end
 
     end
