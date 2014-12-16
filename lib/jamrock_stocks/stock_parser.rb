@@ -7,7 +7,7 @@ module JamrockStocks
     REGEXP_DOLLAR_SIGN        = /\$/
     REGEXP_NON_BREAKING_SPACE = /\u00a0/
 
-    def fetch_stocks(symbol: '')
+    def fetch_stocks(symbols:[])
       stocks            = []
       page              = Nokogiri::HTML(open(StockConfig::STOCKS_URL))
       stocks_symbols    = page.css(StockConfig::SYMBOLS_HTML_PATH).map { |s| s.text.strip.upcase }
@@ -25,7 +25,9 @@ module JamrockStocks
                             change: change_and_volume[index][0].to_f,
                             volume: change_and_volume[index][1].to_i)
       end
-      data = symbol.empty? ? stocks.freeze : stocks.find{ |s| s.symbol == symbol }
+
+      data = stocks
+      data =  symbols.map!(&:upcase).map!(&:strip).map{ |symbol| stocks.find {|stock| stock.symbol == symbol} }.compact if symbols.to_a.any?
       { stocks: data, date: date.freeze, time: time.freeze }
     end
   end
