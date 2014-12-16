@@ -26,7 +26,6 @@ module JamrockStocks
                              change: change_and_volume[index][0].to_f,
                              volume: change_and_volume[index][1].to_i )
       end
-      binding.pry
       { stocks: stocks.freeze, date: date.freeze, time: time.freeze }
     end
 
