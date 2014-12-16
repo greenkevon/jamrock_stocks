@@ -1,0 +1,72 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+<HEAD>
+    <title>TickerTradeDataSource</title>
+    <meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+    <meta name="CODE_LANGUAGE" Content="C#">
+    <meta name="vs_defaultClientScript" content="JavaScript">
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+    <link href='/assets/styles/Styles.css' rel="stylesheet" type="text/css">
+    <script type="text/javascript" src='/assets/scripts/jquery-1.3.2.min.js' type="text/javascript" language="javascript" ></script>
+    <script language="javascript">
+
+        $(document).ready(function(){
+            parent.tradeDataTicker.UpdateTickerData( $("#TickerTradeDataSpan").html() );
+        });
+
+    </script>
+</HEAD>
+<body MS_POSITIONING="GridLayout">
+<form name="Form1" method="post" action="TickerTradeDataSource.aspx" id="Form1">
+    <input type="hidden" name="__VIEWSTATE" value="dDwtMTgyMjg4MzgxOTt0PDtsPGk8MD47aTwxPjs+O2w8dDxAPC87Lzs+Ozs+O3Q8O2w8aTwxPjtpPDM+Oz47bDx0PHA8bDxfIUl0ZW1Db3VudDs+O2w8aTwxNj47Pj47bDxpPDA+O2k8MT47aTwyPjtpPDM+O2k8ND47aTw1PjtpPDY+O2k8Nz47aTw4PjtpPDk+O2k8MTA+O2k8MTE+O2k8MTI+O2k8MTM+O2k8MTQ+O2k8MTU+O2k8MTY+Oz47bDx0PDtsPGk8MD47PjtsPHQ8QDxNYXJrZXQgc3VtbWFyeSBmb3ImbmJzcFw7MDgtRGVjLTIwMTQmbmJzcFw7MTA6MjcmbmJzcFw7ICgtNSBHTVQpOz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8TEFTTTszMCwwMDA7MS4wMDtcPGltZyBzcmM9Jy9Bc3NldHMvaW1hZ2VzL1N0b2NrVGlja2VyL3VwLWFycm93LmdpZidcPjswLjAxOz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8RENPVkU7MTA4OzguNTA7XDxpbWcgc3JjPScvQXNzZXRzL2ltYWdlcy9TdG9ja1RpY2tlci9kb3duLWFycm93LmdpZidcPjstMC4wMzs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPFNKOzEsMzQwOzkuOTM7XDxpbWcgc3JjPScvQXNzZXRzL2ltYWdlcy9TdG9ja1RpY2tlci9kb3duLWFycm93LmdpZidcPjstMC4wNjs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPE1JTDsxLDcwMDsxLjUyO1w8aW1nIHNyYz0nL0Fzc2V0cy9pbWFnZXMvU3RvY2tUaWNrZXIvdXAtYXJyb3cuZ2lmJ1w+OzAuMDI7Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8QDxDQVI7NSwwMDA7MzcuMDA7XGU7MC4wMDs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPFNHSjsyLDAwMDsyMC40MDtcPGltZyBzcmM9Jy9Bc3NldHMvaW1hZ2VzL1N0b2NrVGlja2VyL3VwLWFycm93LmdpZidcPjswLjAzOz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8Sk1NQjs1MDI7Ny4wNTtcPGltZyBzcmM9Jy9Bc3NldHMvaW1hZ2VzL1N0b2NrVGlja2VyL2Rvd24tYXJyb3cuZ2lmJ1w+Oy0wLjAxOz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8REc7NCw5Mzg7NC42NTtcPGltZyBzcmM9Jy9Bc3NldHMvaW1hZ2VzL1N0b2NrVGlja2VyL2Rvd24tYXJyb3cuZ2lmJ1w+Oy0wLjA0Oz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8R0s7MjUsMDAwOzYyLjAwO1w8aW1nIHNyYz0nL0Fzc2V0cy9pbWFnZXMvU3RvY2tUaWNrZXIvdXAtYXJyb3cuZ2lmJ1w+OzEuOTM7Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8QDxIT05CVU47MTAsMDAwOzEuOTA7XDxpbWcgc3JjPScvQXNzZXRzL2ltYWdlcy9TdG9ja1RpY2tlci9kb3duLWFycm93LmdpZidcPjstMC4yMjs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPE1JTDs1LDQ0MDsxLjUwO1xlOzAuMDA7Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8QDxMSU1FOzE1LDY5MjswLjQ1O1w8aW1nIHNyYz0nL0Fzc2V0cy9pbWFnZXMvU3RvY2tUaWNrZXIvdXAtYXJyb3cuZ2lmJ1w+OzAuMDE7Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8QDxMSU1FOzgsNTAwOzAuNDQ7XGU7MC4wMDs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPExJTUU7ODA4OzAuNDQ7XGU7MC4wMDs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPE5DQko7MTc4LDkzMjsxOC4yNTtcPGltZyBzcmM9Jy9Bc3NldHMvaW1hZ2VzL1N0b2NrVGlja2VyL3VwLWFycm93LmdpZidcPjswLjA1Oz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8Q0FSOzEwLDExODszNy4wMDtcZTswLjAwOz47Oz47Pj47Pj47dDxwPGw8XyFJdGVtQ291bnQ7PjtsPGk8LTE+Oz4+Ozs+Oz4+Oz4+Oz7rpxRLUfpow3S+BQ3Q8/hKZfcOmg==" />
+
+    <input type="hidden" name="__VIEWSTATEGENERATOR" value="FEC097BB" />
+
+			<span id="TickerTradeDataSpan"  name="TickerTradeDataSpan">
+							<table cellpadding="0" cellspacing="0" border="0" height="22px">
+                                <tr>
+                                    <td valign="top" >
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;&nbsp;Market summary for&nbsp;08-Dec-2014&nbsp;10:27&nbsp; (-5 GMT)&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>LASM</strong>&nbsp;30,000&nbsp;@&nbsp;$1.00&nbsp;<img src='/Assets/images/StockTicker/up-arrow.gif'>&nbsp;$0.01&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>DCOVE</strong>&nbsp;108&nbsp;@&nbsp;$8.50&nbsp;<img src='/Assets/images/StockTicker/down-arrow.gif'>&nbsp;$-0.03&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>SJ</strong>&nbsp;1,340&nbsp;@&nbsp;$9.93&nbsp;<img src='/Assets/images/StockTicker/down-arrow.gif'>&nbsp;$-0.06&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>MIL</strong>&nbsp;1,700&nbsp;@&nbsp;$1.52&nbsp;<img src='/Assets/images/StockTicker/up-arrow.gif'>&nbsp;$0.02&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>CAR</strong>&nbsp;5,000&nbsp;@&nbsp;$37.00&nbsp;&nbsp;$0.00&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>SGJ</strong>&nbsp;2,000&nbsp;@&nbsp;$20.40&nbsp;<img src='/Assets/images/StockTicker/up-arrow.gif'>&nbsp;$0.03&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>JMMB</strong>&nbsp;502&nbsp;@&nbsp;$7.05&nbsp;<img src='/Assets/images/StockTicker/down-arrow.gif'>&nbsp;$-0.01&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>DG</strong>&nbsp;4,938&nbsp;@&nbsp;$4.65&nbsp;<img src='/Assets/images/StockTicker/down-arrow.gif'>&nbsp;$-0.04&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>GK</strong>&nbsp;25,000&nbsp;@&nbsp;$62.00&nbsp;<img src='/Assets/images/StockTicker/up-arrow.gif'>&nbsp;$1.93&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>HONBUN</strong>&nbsp;10,000&nbsp;@&nbsp;$1.90&nbsp;<img src='/Assets/images/StockTicker/down-arrow.gif'>&nbsp;$-0.22&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>MIL</strong>&nbsp;5,440&nbsp;@&nbsp;$1.50&nbsp;&nbsp;$0.00&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>LIME</strong>&nbsp;15,692&nbsp;@&nbsp;$0.45&nbsp;<img src='/Assets/images/StockTicker/up-arrow.gif'>&nbsp;$0.01&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>LIME</strong>&nbsp;8,500&nbsp;@&nbsp;$0.44&nbsp;&nbsp;$0.00&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>LIME</strong>&nbsp;808&nbsp;@&nbsp;$0.44&nbsp;&nbsp;$0.00&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>NCBJ</strong>&nbsp;178,932&nbsp;@&nbsp;$18.25&nbsp;<img src='/Assets/images/StockTicker/up-arrow.gif'>&nbsp;$0.05&nbsp;&nbsp;&nbsp;</td>
+
+                                    <td nowrap background="/Assets/images/StockTicker/BlueStrip.jpg">&nbsp;&nbsp;&nbsp;<strong>CAR</strong>&nbsp;10,118&nbsp;@&nbsp;$37.00&nbsp;&nbsp;$0.00&nbsp;&nbsp;&nbsp;</td>
+
+
+                                </tr>
+                            </table>
+			</span>
+</form>
+</body>
+</HTML>
+
