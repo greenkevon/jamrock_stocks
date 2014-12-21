@@ -15,7 +15,7 @@ module JamrockStocks
       stocks_prices     = page.css(StockConfig::PRICE_HTML_PATH).map { |p| p.text.strip.gsub(REGEXP_DOLLAR_SIGN, StockParser::STRING_NO_SPACE) }
       change_and_volume = get_volume(page)
 
-      (stocks_symbols.count - 1).times do |index|
+      stocks_symbols.count.times do |index|
         stocks << Stock.new(symbol: stocks_symbols[index].to_s,
                             price:  stocks_prices[index].to_f,
                             change: change_and_volume[index][0].to_f,
