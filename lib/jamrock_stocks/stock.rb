@@ -12,7 +12,7 @@ module JamrockStocks
     end
 
     def percentage_change
-      (change / previous_price) * 100
+      (@change / @previous_price) * 100
     end
   end
 end
