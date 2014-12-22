@@ -1,16 +1,20 @@
 require 'jamrock_stocks/version'
 require 'jamrock_stocks/stock'
-require 'jamrock_stocks/stock_config'
-require 'jamrock_stocks/stock_parser'
+# require 'jamrock_stocks/mayberry'
 require 'pry'
+require 'time'
 require 'nokogiri'
 require 'open-uri'
+
+# Brokers are automatically loaded
+brokers_paths = File.join(File.dirname(__FILE__), 'jamrock_stocks', 'brokers', '*.rb')
+Dir[brokers_paths].each { |file| require file }
 
 module JamrockStocks
   class StockClient
 
-      def self.fetch_stocks(symbols:[])
-        StockParser.new.fetch_stocks symbols: symbols
+      def self.stocks
+        Mayberry.new.stocks
       end
 
     end
