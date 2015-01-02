@@ -34,6 +34,9 @@ module JamrockStocks
     end
 
     def fetch_stocks
+
+      return [] if stock_symbols.empty?
+
       reset
       stocks = []
       stock_symbols.count.times do |index|
